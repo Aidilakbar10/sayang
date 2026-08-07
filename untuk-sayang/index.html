@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kesayanganku...</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bg-music" src="lagu.mp3" loop preload="auto"></audio>
 
+    <div id="particles"></div>
+
+    <div class="card" id="main-card">
+        
+        <div class="image-wrapper">
+            <!-- Ganti dengan nama foto kalian -->
+            <img src="1.jpg" alt="Foto Kita" id="main-photo">
+        </div>
+
+        <button id="btn-music" class="btn-music">🎵 Putar Lagu</button>
+
+        <h1 class="title">Sayangkuu, Cintakuu, Cantikkuu, Duniakuu...</h1>
+        
+        <div class="message-container">
+            <p id="message">
+                Akuu sadar sayanggg belakangan ini akuuu kann sudahh bikinn banyak masalah yaa dan ituu bikin sayanggg kecewa.<br><br>
+                Apalagii kemarinn kemarinn sikapp dan responn akuu kepadaa sayangg kurang baikk dan kurang enakk ke hatii sayangnyaa,<br><br>
+                Padahall sayangg tuhh udahh sepengertian ituu samaa akuu tapii akuu nyaa malahh gituu maafinn akuu yaa sayangg<br><br>
+                Tapii akuu nggak ada niatan sedikit pun kokk buat nyakitin sayangg. Aku beneran nyesel dan kangen obrolan kita. Boleh kita perbaiki ini dan baikan lagi?
+            </p>
+        </div>
+
+        <!-- ALBUM VIDEO SLIDER (Awalnya tersembunyi) -->
+        <div class="memory-slider-wrapper" id="memory-slider-wrapper">
+            <div class="slider-container" id="slider-container">
+                
+                <!-- 1. EDIT VIDEO PERTAMA DI SINI -->
+                <div class="slide">
+                    <video src="2.MOV" controls preload="metadata"></video>
+                </div>
+                
+                <!-- 2. EDIT VIDEO KEDUA DI SINI -->
+                <div class="slide">
+                    <video src="1.MOV" controls preload="metadata"></video>
+                </div>
+
+                <div class="slide">
+                    <video src="08.mp4" controls preload="metadata"></video>
+                </div>
+
+                <!-- 3. BISA JUGA DITAMBAH FOTO DI DALAM SLIDER -->
+                <div class="slide">
+                    <img src="2.jpg" alt="Kenangan Manis">
+                </div>
+                
+                <!-- Kalau mau nambah video lagi, cukup copy-paste struktur <div class="slide"> ... </div> di atas -->
+
+            </div>
+            
+            <!-- Tombol Geser Kiri / Kanan -->
+            <button class="slider-btn prev" id="prev-btn">&#10094;</button>
+            <button class="slider-btn next" id="next-btn">&#10095;</button>
+        </div>
+
+        <div class="action-buttons" id="action-buttons">
+            <button id="btn-yes" class="btn primary">Iya, kita baikan</button>
+            <button id="btn-no" class="btn secondary">Masih kesel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
